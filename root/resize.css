@@ -43,6 +43,7 @@ ul {
 #wrapper {
   width: 80%;
   min-width: 500px;
+  max-width: 1100px;
   margin: 20px auto;
 }
 
