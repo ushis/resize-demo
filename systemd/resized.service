@@ -1,0 +1,13 @@
+[Unit]
+Description=image resizing server
+After=network.target
+
+[Service]
+Type=simple
+User=http
+Group=http
+ExecStart=/usr/bin/resized -listen=/run/resize/resized.sock /srv/http/resize
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

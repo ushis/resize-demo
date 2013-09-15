@@ -11,6 +11,7 @@ or build it yourself.
 
 You will need [godag](https://code.google.com/p/godag/) to make this work.
 
+    go get github.com/nfnt/resize
     git clone https://github.com/ushis/resize
     cd resize
     make
