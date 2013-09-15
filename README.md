@@ -1,22 +1,22 @@
 # Resize Demo
 
-This is a small demo server to demonstrate the different interpolation
-algorithms of the [https://github.com/nfnt/resize](Golang resize package)
-from [https://github.com/nfnt](nfnt).
+This is a small server to demonstrate the different interpolation
+algorithms of thea [Golang resize package](https://github.com/nfnt/resize)
+from [nfnt](https://github.com/nfnt).
 
 ## Try it
 
-Visit the online demo at [http://resize.honkgong.info](resize.honkgong.info)
+Visit the online demo at http://resize.honkgong.info
 or build it yourself.
 
-You will need [https://code.google.com/p/godag/](godag) to make this work.
+You will need [godag](https://code.google.com/p/godag/) to make this work.
 
     git clone https://github.com/ushis/resize
     cd resize
     make
     ./resized root
 
-Now checkout [http://localhost:8080](localhost:8080).
+Now checkout [localhost:8080](http://localhost:8080).
 
 ## License
 
