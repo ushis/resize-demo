@@ -111,18 +111,17 @@ func (s *Server) handleGet(w http.ResponseWriter, r *http.Request) (err error) {
       http.ServeFile(w, r, filepath.Join(s.root, "index.html"))
       return nil
     }
-    return os.ErrNotExist
+    return
   }
 
   if len(parts) < 3 {
-    return os.ErrNotExist
+    return
   }
   abs, err = s.store.Get(parts[len(parts)-1], parts[1], parts[2])
 
-  if err != nil {
-    return
+  if err == nil {
+    http.ServeFile(w, r, abs)
   }
-  http.ServeFile(w, r, abs)
   return
 }
 
