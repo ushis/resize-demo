@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Resize Demo</title>
+    <link rel="stylesheet" href="/resize.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Image Interpolation Algorithms</h1>
+
+      <div id="orig">
+        <div>Drop an image file here!</div>
+      </div>
+
+      <div id="results">
+        <ul id="tabs">
+          <li data-width="600">600</li>
+          <li data-width="500">500</li>
+          <li class="active" data-width="400">400</li>
+          <li data-width="300">300</li>
+          <li data-width="200">200</li>
+        </ul>
+
+        <ul id="images">
+          <li>
+            <div class="img" data-interpolation="bicubic"></div>
+            <div class="caption">Bicubic</div>
+          </li>
+          <li>
+            <div class="img" data-interpolation="bilinear"></div>
+            <div class="caption">Bilinear</div>
+          </li>
+          <li>
+            <div class="img" data-interpolation="lanczos2"></div>
+            <div class="caption">Lanczos2</div>
+          </li>
+          <li>
+            <div class="img" data-interpolation="lanczos2lut"></div>
+            <div class="caption">Lanczos2Lut</div>
+          </li>
+          <li>
+            <div class="img" data-interpolation="lanczos3"></div>
+            <div class="caption">Lanczos3</div>
+          </li>
+          <li>
+            <div class="img" data-interpolation="lanczos3lut"></div>
+            <div class="caption">Lanczos3Lut</div>
+          </li>
+          <li>
+            <div class="img" data-interpolation="mitchelnetravali"></div>
+            <div class="caption">MitchellNetravali</div>
+          </li>
+          <li>
+            <div class="img" data-interpolation="nearestneighbor"></div>
+            <div class="caption">NearestNeighbor</div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="about">
+        <h2>Why the hell?</h2>
+
+        <p>
+          This is about the <a href="https://github.com/nfnt/resize">Golang resize package</a>
+          from <a href="https://github.com/nfnt">nfnt</a>.
+        </p>
+
+        <p>
+          The package implements several interpolation algorithms. This tool
+          helps to compare the results of the different algorithms to decide
+          which one is best for your usecase.
+        </p>
+
+        <p>
+          Fork this project on <a href="https://github.com/ushis/resized">GitHub</a>.
+        </p>
+      </div>
+    </div>
+
+    <script src="/resize.js"></script>
+  </body>
+</html>

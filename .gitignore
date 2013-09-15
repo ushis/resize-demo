@@ -1,0 +1,10 @@
+# Vim
+*.swo
+*.swp
+
+# Binaries
+/resized
+*.6
+
+# Images
+/root/images
