@@ -82,6 +82,8 @@
     });
 
     xhr.addEventListener('load', function(_) {
+      that.el.removeChild(gutter);
+
       if (this.status != 200) {
         return alert(this.responseText);
       }
