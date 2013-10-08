@@ -1,14 +1,17 @@
-SRC := $(shell find src -name '*.go')
 BIN := resized
+
+export GOPATH := $(shell pwd)
 
 .PHONY: $(BIN)
 
-$(BIN): $(SRC)
-	gd -o $@
+$(BIN): deps
+	go build -v $@
+
+deps:
+	go get -d -v resizer/...
 
 clean:
 	rm -f $(BIN)
-	gd clean
 
 fmt:
-	gd fmt -w2
+	gofmt -l -w -tabs=false -tabwidth=2 src/resize{r,d}

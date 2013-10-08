@@ -9,9 +9,6 @@ from [nfnt](https://github.com/nfnt).
 Visit the online demo at http://resize.honkgong.info
 or build it yourself.
 
-You will need [godag](https://code.google.com/p/godag/) to make this work.
-
-    go get github.com/nfnt/resize
     git clone https://github.com/ushis/resize
     cd resize
     make
@@ -23,7 +20,7 @@ Now checkout [localhost:8080](http://localhost:8080).
 
 The MIT License (MIT)
 
-Copyright (c) 2013 ushi
+Copyright (c) 2013 ushi <ushi@honkgong.info>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

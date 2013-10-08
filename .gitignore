@@ -4,7 +4,9 @@
 
 # Binaries
 /resized
-*.6
 
 # Images
 /root/images
+
+# Deps
+/src/github.com

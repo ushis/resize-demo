@@ -1,12 +1,12 @@
 package main
 
 import (
+  "flag"
   "fmt"
   "os"
   "os/signal"
   "resizer"
   "syscall"
-  "flag"
 )
 
 var addr string
