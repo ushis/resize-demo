@@ -6,7 +6,7 @@ from [nfnt](https://github.com/nfnt).
 
 ## Try it
 
-Visit the online demo at http://resize.honkgong.info
+Visit the online demo at http://resize.wurstcase.net
 or build it yourself.
 
     git clone https://github.com/ushis/resize
