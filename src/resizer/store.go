@@ -20,9 +20,7 @@ var interpolations = map[string]resize.InterpolationFunction{
   "bicubic":          resize.Bicubic,
   "bilinear":         resize.Bilinear,
   "lanczos2":         resize.Lanczos2,
-  "lanczos2lut":      resize.Lanczos2Lut,
   "lanczos3":         resize.Lanczos3,
-  "lanczos3lut":      resize.Lanczos3Lut,
   "mitchelnetravali": resize.MitchellNetravali,
   "nearestneighbor":  resize.NearestNeighbor,
 }
